@@ -1,0 +1,245 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+/* navbar starting */
+
+.headerLogo {
+    padding: 0 8px;
+}
+
+.universityName {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.nav-item {
+    transition: 0.5s;
+}
+
+.nav-item:hover {
+    background-color:  rgba(128, 128, 128, 0.473);
+    transform: scale(1.05);
+    margin: 0px 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.profileLogo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    margin-right: 10px;
+}
+
+.sidebar {
+    height: 100vh;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: #F7F7F7;
+}
+
+/* sidebar logo and name */
+.sidebarHomeLink {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* sidebar nav links arrangement */
+.siderbarAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    align-items: start;
+    font-weight: normal;
+}
+
+.sidebarNavLinks {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sidebarNavLinks:hover {
+    background-color:  rgba(128, 128, 128, 0.473);
+}
+
+.hrLine {
+    color: black;
+    border: 1.5px solid black;
+    width: 100%;
+    margin: 3px 0;
+}
+
+
+/* homepage */
+
+/* back to students  */
+.backStudents {
+    color: #333333;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.backStudents:hover {
+    background-color: gray;
+    padding: 2px 8px;
+    border-radius: 16px;
+    color: white;
+}
+
+.newStudentHeading {
+    font-size: 32px;
+    font-weight: normal;
+    color: black;
+    margin-top: 25px;
+}
+
+label {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: black;
+    font-weight: normal;
+}
+
+/* inputs common styles */
+input,
+select {
+    width: 100%;
+    padding: 8px 15px;
+    color: black;
+    border: 1px solid #B8B8B8;
+    font-size: 16px;
+}
+
+select {
+    width: 80%;
+}
+
+.rollInput {
+    width: 30%;
+    background-color: #F7F7F7;
+}
+
+.joinDate {
+    width: 50%;
+}
+
+.actionBtn {
+    margin-top: 4%;
+    background-color: #333333;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.actionBtn:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.cancelBtn {
+    background-color: rgba(128, 128, 128, 0.174);
+    color: black;
+    border: 1px solid #B8B8B8;
+    padding: 8px 18px;
+}
+
+.cancelBtn:hover {
+    background-color: rgba(128, 128, 128, 0.364);
+    color: white;
+    border-color: gray;
+}
+
+/* imgage */
+.imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 1px; */
+}
+
+.newStudentLogo {
+    width: auto;
+}
+
+/* Responsive Styles */
+@media (max-width:900px) {
+    
+    .rollInput,
+    .joinDate {
+        width: 100%;
+    }
+
+    .actionBtn,
+    .cancelBtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    select {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .imgDiv {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .row {
+        text-align: left;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    .actionBtn,
+    .cancelBtn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
