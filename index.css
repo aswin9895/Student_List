@@ -47,7 +47,6 @@ a.active{
     color: black;
     text-align: left;
     font-weight: normal;
-    /* padding: 0px 4px; */
     padding-left: 10px;
 }
 
@@ -286,7 +285,7 @@ th::after {
     color: #B8B8B8;
     border: 1px solid #B8B8B8;
     font-size: 16px;
-    margin: 0px px;
+    /* margin: 0px 1px; */
     padding: 1px 6px;
     background-color: #F7F7F7;
     transition: 0.3s;
