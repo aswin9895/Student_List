@@ -138,10 +138,11 @@
 
                             <label for="college">College</label><br>
                             <select name="college" id="college">
-                                <option value="" selected disabled hidden>Select College</option>
+                                <option value="St Thomas College" selected >St Thomas College</option>
                                 <option value="St. Thomas College, Pala">St. Thomas College, Pala</option>
                                 <option value="Maharajas College, Ernakulam">Maharajas College, Ernakulam</option>
                                 <option value="St. Theresas College, Ernakulam">St. Theresas College, Ernakulam</option>
+                                <option value="SS College Poothotta">SS College Poothotta</option>
                             </select><br>
 
                             <label for="course">Course</label><br>
@@ -154,6 +155,9 @@
 
                             <label for="jDate">Joining Date</label><br>
                             <input class="joinDate" type="date" name="joining Date" id="jDate"><br>
+
+                            <label for="age">Age</label><br>
+                            <input type="number" name="age" id="age" class="w-25">
 
                             <div class="mt-4">
                                 <button class="actionBtn me-3">Save</button>
@@ -189,8 +193,9 @@
         let college = document.getElementById("college").value;
         let course = document.getElementById("course").value;
         let joiningDate = document.getElementById("jDate").value;
+        let age = document.getElementById("age").value;
 
-        if (!rollNo || !firstName || !lastName || !college || !course || !joiningDate) {
+        if (!rollNo || !firstName || !lastName || !college || !course || !joiningDate || !age) {
             alert("Please fill all fields.");
 
             console.log("Roll Number:", rollNo);
@@ -199,6 +204,8 @@
             console.log("College:", college);
             console.log("Course:", course);
             console.log("Joining Date:", joiningDate);
+            console.log("age", age);
+            
         } else {
             alert("Student details saved successfully!");
             console.log("Roll Number:", rollNo);
@@ -207,6 +214,8 @@
             console.log("College:", college);
             console.log("Course:", course);
             console.log("Joining Date:", joiningDate);
+            console.log("age", age);
+
         }
     });
 </script>
